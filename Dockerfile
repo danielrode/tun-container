@@ -14,6 +14,6 @@ RUN <<EOF
   chmod 600 /root/.ssh/authorized_keys
   ssh-keygen -A
 
-  echo "PasswordAuthentication no" > /etc/ssh/sshd_config.d/00
-  echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config.d/00
+  echo "PasswordAuthentication no" > /etc/ssh/sshd_config.d/00.conf
+  echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config.d/00.conf
 EOF
