@@ -16,4 +16,5 @@ RUN <<EOF
 
   echo "PasswordAuthentication no" > /etc/ssh/sshd_config.d/00.conf
   echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config.d/00.conf
+  echo "GatewayPorts clientspecified" >> /etc/ssh/sshd_config.d/00.conf
 EOF
